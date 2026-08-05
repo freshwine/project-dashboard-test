@@ -28,13 +28,13 @@ import { type SidebarData } from '../types'
 
 export const sidebarData: SidebarData = {
   user: {
-    name: 'Jack Kuo',
+    name: 'Thi',
     email: 'jack223056@thi.com.tw',
     avatar: '/avatars/shadcn.jpg',
   },
   teams: [
     {
-      name: 'Jack Kuo',
+      name: 'Thi',
       logo: TrainFront,
       plan: 'project-test',
     },
