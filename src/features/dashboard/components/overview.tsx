@@ -63,7 +63,6 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
           fill='#84C1FF'
           strokeWidth={5}
           fillOpacity={0.5}
-          isAnimationActive={false}
         />
 
         <Radar
@@ -72,7 +71,6 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
           fill='#1E3A8A'
           strokeWidth={5}
           fillOpacity={0.5}
-          isAnimationActive={false}
         />
 
         <Radar
@@ -81,7 +79,6 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
           fill='#3B82F6'
           strokeWidth={5}
           fillOpacity={0.5}
-          isAnimationActive={false}
         />
 
         <Legend

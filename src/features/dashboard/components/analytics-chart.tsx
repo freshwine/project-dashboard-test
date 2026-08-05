@@ -71,7 +71,6 @@ export function AnalyticsChart() {
           fill='#D0E0E3'
           fillOpacity={1}
           stackId='a'
-          isAnimationActive={false}
         />
 
         <Area
@@ -82,7 +81,6 @@ export function AnalyticsChart() {
           fill='#EAD1DC'
           fillOpacity={1}
           stackId='a'
-          isAnimationActive={false}
         />
       </AreaChart>
     </ResponsiveContainer>
