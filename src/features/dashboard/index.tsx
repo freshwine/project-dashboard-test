@@ -1,3 +1,4 @@
+import { API } from '@/config/api'
 import { TrainFront } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import {
@@ -63,8 +64,7 @@ export function Dashboard() {
                   <CardDescription>民國94年各縣市旅次量</CardDescription>
                 </CardHeader>
                 <CardContent className='ps-2'>
-                  {/* <TaiwanMap dataUrl='http://localhost:5000/api/dashboard/overview/trip_count/94/weekday' /> */}
-                  <TaiwanMap dataUrl='data/trip_count_94_weekday.json' />
+                  <TaiwanMap dataUrl={API.taiwnanMapTripCount94Weekday} />
                 </CardContent>
               </Card>
               <Card className='col-span-1 lg:col-span-3'>
@@ -73,8 +73,7 @@ export function Dashboard() {
                   <CardDescription>民國94年各縣市旅次量</CardDescription>
                 </CardHeader>
                 <CardContent className='ps-2'>
-                  {/* <TaiwanMap dataUrl='http://localhost:5000/api/dashboard/overview/trip_count/94/weekend' /> */}
-                  <TaiwanMap dataUrl='data/trip_count_94_weekend.json' />
+                  <TaiwanMap dataUrl={API.taiwnanMapTripCount94Weekend} />
                 </CardContent>
               </Card>
             </div>
@@ -85,8 +84,7 @@ export function Dashboard() {
                   <CardDescription>民國113年各縣市旅次量</CardDescription>
                 </CardHeader>
                 <CardContent className='ps-2'>
-                  {/* <TaiwanMap dataUrl='http://localhost:5000/api/dashboard/overview/trip_count/113/weekday' /> */}
-                  <TaiwanMap dataUrl='data/trip_count_113_weekday.json' />
+                  <TaiwanMap dataUrl={API.taiwnanMapTripCount113Weekday} />
                 </CardContent>
               </Card>
               <Card className='col-span-1 lg:col-span-3'>
@@ -95,8 +93,7 @@ export function Dashboard() {
                   <CardDescription>民國113年各縣市旅次量</CardDescription>
                 </CardHeader>
                 <CardContent className='ps-2'>
-                  {/* <TaiwanMap dataUrl='http://localhost:5000/api/dashboard/overview/trip_count/113/weekend' /> */}
-                  <TaiwanMap dataUrl='data/trip_count_113_weekend.json' />
+                  <TaiwanMap dataUrl={API.taiwnanMapTripCount113Weekend} />
                 </CardContent>
               </Card>
             </div>

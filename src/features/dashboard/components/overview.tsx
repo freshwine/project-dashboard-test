@@ -29,8 +29,6 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
   return (
     <ResponsiveContainer width='100%' height={500}>
       <RadarChart data={data}>
-        <PolarGrid />
-
         <PolarGrid strokeWidth={1.5} />
 
         <PolarAngleAxis
@@ -40,8 +38,9 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
 
         <PolarRadiusAxis
           angle={90}
-          domain={[-1, 1]}
+          domain={[-0.1, 0.1]}
           tick={false}
+          ticks={[-0.1, 0, 0.1]}
           tickFormatter={(value) => (value === 0 ? '' : `${value * 100}%`)}
         />
 
@@ -62,7 +61,7 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
           stroke='#84C1FF'
           fill='#84C1FF'
           strokeWidth={5}
-          fillOpacity={0.5}
+          fillOpacity={0.1}
         />
 
         <Radar
@@ -70,7 +69,7 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
           stroke='#1E3A8A'
           fill='#1E3A8A'
           strokeWidth={5}
-          fillOpacity={0.5}
+          fillOpacity={0.1}
         />
 
         <Radar
@@ -78,7 +77,7 @@ export function Overview({ dataUrl }: { dataUrl: string }) {
           stroke='#3B82F6'
           fill='#3B82F6'
           strokeWidth={5}
-          fillOpacity={0.5}
+          fillOpacity={0.1}
         />
 
         <Legend

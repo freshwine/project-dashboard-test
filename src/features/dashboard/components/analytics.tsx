@@ -1,3 +1,4 @@
+import { API } from '@/config/api'
 import {
   Card,
   CardContent,
@@ -16,7 +17,7 @@ export function Analytics() {
           <CardDescription>平假日所有運具旅次運量</CardDescription>
         </CardHeader>
         <CardContent className='px-6'>
-          <AnalyticsChart />
+          <AnalyticsChart dataUrl={API.analyticsChart} />
         </CardContent>
       </Card>
       <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>

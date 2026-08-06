@@ -14,9 +14,7 @@ type Item = {
   假日: number
 }
 
-export function AnalyticsChart() {
-  const dataUrl = `${import.meta.env.BASE_URL}data/trip_count_94-113.json`
-
+export function AnalyticsChart({ dataUrl }: { dataUrl: string }) {
   const [data, setData] = useState<Item[]>([])
 
   useEffect(() => {

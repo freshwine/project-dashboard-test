@@ -1,3 +1,4 @@
+import { API } from '@/config/api'
 import {
   Card,
   CardContent,
@@ -155,8 +156,7 @@ export function WeekendDashboard() {
             <CardDescription>民國94與113年各縣市市占率變化</CardDescription>
           </CardHeader>
           <CardContent className='ps-2'>
-            {/* <Overview dataUrl='http://localhost:5000/api/dashboard/overview/trip_dis_gro_rate/94/113/weekend' /> */}
-            <Overview dataUrl='data/trip_dis_gro_rate_weekend.json' />
+            <Overview dataUrl={API.overview94113Weekend} />
           </CardContent>
         </Card>
         <Card className='col-span-1 lg:col-span-3'>
@@ -165,8 +165,7 @@ export function WeekendDashboard() {
             <CardDescription>民國113年各縣市旅次量排名</CardDescription>
           </CardHeader>
           <CardContent>
-            {/* <TripRanking dataUrl='http://localhost:5000/api/dashboard/overview/trip_count/113/weekend' /> */}
-            <TripRanking dataUrl='data/trip_count_113_weekend.json' />
+            <TripRanking dataUrl={API.overviewTripRanking113Weekend} />
           </CardContent>
         </Card>
       </div>
